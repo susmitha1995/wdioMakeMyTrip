@@ -39,6 +39,9 @@ jobs:
       - name: Set permissions for wdio
         run: chmod +x ./node_modules/.bin/wdio
 
+      - name: Set permissions for allure
+        run: chmod +x ./node_modules/.bin/allure
+
       - name: Running E2E tests
         run: |
           retries=3
