@@ -4,39 +4,35 @@ on:
   push:
     branches:
       - '**'
+  pull_request:
+    branches:
+      - '**'
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # Install necessary drivers to run the tests
-      - name: Install Chromium
-        run: sudo apt-get install -y chromium-browser
-
-      # Checkout the current branch
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # Setup Node.js environment
-      - name: Use Node.js
+      - name: Install Chromium
+        run: sudo apt-get install -y chromium-browser
+
+      - name: Set up Node.js
         uses: actions/setup-node@v1
         with:
           node-version: '20.x'
 
-      # Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # Run E2E tests
       - name: Running E2E tests
         run: npx wdio wdio.conf.ts
 
-      # Generate Allure report
       - name: Generate Allure report
         run: npx allure generate --clean
 
-      # Publish Allure report to GitHub Pages
       - name: Publish Allure report
         uses: crazy-max/ghaction-github-pages@v2
         with:
