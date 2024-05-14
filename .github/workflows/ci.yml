@@ -27,6 +27,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Ensure node-pre-gyp has correct permissions
+        run: chmod +x ./node_modules/.bin/node-pre-gyp
+
       - name: Rebuild canvas
         run: npm rebuild canvas
 
