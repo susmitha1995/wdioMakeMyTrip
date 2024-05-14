@@ -28,7 +28,7 @@ jobs:
         run: npm install
 
       - name: Running E2E tests
-        run: npx wdio wdio.conf.ts
+        run: npx wdio run ./wdio.conf.ts --spec ./test/specs/makemytrip/*.ts
 
       - name: Generate Allure report
         run: npx allure generate --clean
