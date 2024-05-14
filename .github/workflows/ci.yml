@@ -16,8 +16,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install Chromium
-        run: sudo apt-get install -y chromium-browser
+      - name: Install dependencies for canvas
+        run: sudo apt-get install -y libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -26,6 +26,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Rebuild canvas
+        run: npm rebuild canvas
 
       - name: List files in directory
         run: ls -l ./node_modules/.bin
