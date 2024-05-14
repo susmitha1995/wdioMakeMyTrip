@@ -1,0 +1,7 @@
+.........Console Logs.........
+
+cars available for this select is :  5
+Lowest price list (First three):
+Dzire, Etios : ₹ 1748
+Xylo, Ertiga : ₹ 2247
+Indica, Swift : ₹ 2477
