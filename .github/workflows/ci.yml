@@ -22,7 +22,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '14'
+          node-version: '20.12.0'
 
       - name: Install dependencies
         run: npm install
@@ -34,7 +34,7 @@ jobs:
         run: chmod +x ./node_modules/.bin/wdio
 
       - name: Running E2E tests
-        run: npx wdio run ./wdio.conf.ts --spec ./test/specs/makemytrip/*.ts
+        run: NODE_OPTIONS="--unhandled-rejections=strict" npx wdio run ./wdio.conf.ts --spec ./test/specs/makemytrip/*.ts
 
       - name: Generate Allure report
         run: npx allure generate --clean
