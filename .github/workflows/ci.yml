@@ -23,9 +23,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20.12.0'
-        retry:
-          max-attempts: 3
-          delay-seconds: 15
 
       - name: Install dependencies
         run: npm install
@@ -37,7 +34,15 @@ jobs:
         run: chmod +x ./node_modules/.bin/wdio
 
       - name: Running E2E tests
-        run: NODE_OPTIONS="--unhandled-rejections=strict" npx wdio run ./wdio.conf.ts --spec ./test/specs/makemytrip/*.ts
+        run: |
+          retries=3
+          delay=15
+          for i in $(seq 1 $retries); do
+            NODE_OPTIONS="--unhandled-rejections=strict" npx wdio run ./wdio.conf.ts --spec ./test/specs/makemytrip/*.ts && break || {
+              echo "Attempt $i failed! Trying again in $delay seconds..."
+              sleep $delay
+            }
+          done
 
       - name: Generate Allure report
         run: npx allure generate --clean
