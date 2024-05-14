@@ -30,7 +30,7 @@ jobs:
 
       # Run E2E tests
       - name: Running E2E tests
-        run: npx wdio wdio.conf.ts
+        run: npx wdio run ./wdio.conf.ts --spec ./test/specs/makemytrip/*.ts
 
       # Generate Allure report
       - name: Generate Allure report
