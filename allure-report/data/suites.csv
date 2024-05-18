@@ -1,7 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon May 13 22:04:43 IST 2024","Mon May 13 22:04:50 IST 2024","7047","","MakeMyTrip get lowest price for cabs","","","","Get first three lowest price list for cabs with triptype hourlyRental and fuelType ELECTRIC",""
-"failed","Mon May 13 22:03:17 IST 2024","Mon May 13 22:03:39 IST 2024","21851","","MakeMyTrip get lowest price for flights","","","","Get first three lowest price list for flights with triptype roundTrip",""
-"passed","Mon May 13 22:05:36 IST 2024","Mon May 13 22:05:44 IST 2024","7554","","MakeMyTrip get lowest price for bus","","","","Get first three lowest price list for bus",""
-"passed","Mon May 13 22:04:22 IST 2024","Mon May 13 22:04:28 IST 2024","6309","","MakeMyTrip get lowest price for cabs","","","","Get first three lowest price list for cabs with triptype outstationRoundTrip and fuelType DIESEL",""
-"passed","Mon May 13 22:04:28 IST 2024","Mon May 13 22:04:35 IST 2024","7057","","MakeMyTrip get lowest price for cabs","","","","Get first three lowest price list for cabs with triptype outstationOneWay and fuelType DIESEL",""
-"passed","Mon May 13 22:04:35 IST 2024","Mon May 13 22:04:43 IST 2024","7864","","MakeMyTrip get lowest price for cabs","","","","Get first three lowest price list for cabs with triptype hourlyRental and fuelType DIESEL",""

@@ -12,11 +12,24 @@ import Library from '../pageobjects/library.js'
         await $(loc).click()
     }    
    }
+   static async getCurrentURLcontaintTxt(text: string){
+      // Get the current URL
+      const currentUrl = await browser.getUrl();
+      // Check if the URL contains the specified text
+      const isTextInUrl =  currentUrl.includes(text);
+      // Assert that the URL contains the text
+      await expect(isTextInUrl).toBe(true);
+   }
 
    static async scrollTillTheElementVisible(loc: string){
     const element = await $(loc); // loc is the selector for the element you want to scroll to
     await element.scrollIntoView();
    }
+
+   static async getElementCount(loc: string){
+    const elements = await $$(loc);
+    return elements.length;
+}
    static async isDisplayed(loc : string){
     await expect($(loc)).toBeDisplayed();
    }
@@ -34,7 +47,7 @@ import Library from '../pageobjects/library.js'
    static async isTextPresent(loc : string, txtToCheck: string){
     await expect($(loc)).toHaveText(expect.stringContaining(txtToCheck))
    }
-   static async getTexts(loc: string) {
+   static async getTexts(loc: string): Promise<string[]> {
     const elements = await $$(loc);
     let texts: string[] = [];
     for (const element of elements) {
@@ -43,6 +56,7 @@ import Library from '../pageobjects/library.js'
     }
     return texts;
 }
+
 
 static async getText(loc:string){
     return $(loc).getText();

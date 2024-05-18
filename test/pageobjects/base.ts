@@ -7,9 +7,12 @@ class Base {
             case "The Internet":
                 await browser.url(process.env.baseURLInternetHerokuApp + pathVar);
                 break;
-               // Add other cases as needed for different applications
             case "makemytrip":
                 await browser.url(process.env.baseURLMakeMyTrip+pathVar);
+                break;
+            case "github":
+                await browser.url(process.env.github+pathVar)
+                break;
         }
     }
 }

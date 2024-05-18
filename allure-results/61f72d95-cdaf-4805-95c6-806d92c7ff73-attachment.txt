@@ -1,7 +1,0 @@
-.........Console Logs.........
-
-cars available for this select is :  7
-Lowest price list (First three):
-Indica, Swift : ₹ 436
-Dzire, Etios : ₹ 500
-Tata Tigor : ₹ 758

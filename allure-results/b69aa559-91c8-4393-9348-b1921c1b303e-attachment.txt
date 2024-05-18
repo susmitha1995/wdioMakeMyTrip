@@ -1,7 +1,0 @@
-.........Console Logs.........
-
-cars available for this select is :  4
-Lowest price list (First three):
-Dzire, Etios : ₹ 4798
-Xylo, Ertiga : ₹ 6453
-Innova Crysta : ₹ 9672

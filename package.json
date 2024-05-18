@@ -15,9 +15,11 @@
     "@wdio/types": "^8.36.1",
     "@wdio/visual-service": "^4.1.2",
     "allure-commandline": "^2.29.0",
+    "chromedriver": "^124.0.3",
     "cucumber": "^6.0.7",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5",
+    "wdio-chromedriver-service": "^8.1.1",
     "webdriverio": "^8.36.1"
   },
   "scripts": {

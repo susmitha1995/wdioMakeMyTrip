@@ -1,3 +1,0 @@
-.........Console Logs.........
-
-busDetailsConsole[object Promise]

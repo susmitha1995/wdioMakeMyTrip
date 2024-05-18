@@ -99,7 +99,7 @@ describe("MakeMyTrip get lowest price for cabs", () => {
          let carMap = new Map<string, number>();
 
          // Parse car prices as integers and store them in the map
-         for (let i = 0; i < size / 2; i++) {
+         for (let i = 0; i < size / 2; i++) {``
          const parsedPrice = parseInt(carPriceList[i].replace('₹ ', '').replace(/,/g, ''), 10); // Parse price string to integer
          carMap.set(carName[i], parsedPrice); // Store car name and parsed price in the map
 }

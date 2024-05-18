@@ -27,7 +27,15 @@ const pageElements = {
   busPickUpPointCheckBox : properties.get('busPickUpPointCheckBox') as string,
   busDropPointCheckBox: properties.get('busDropPointCheckBox') as string,
   busFilterText : properties.get('busFilterText') as string,
-  busDetails: properties.get('busDetails') as string
+  busDetails: properties.get('busDetails') as string,
+  insights: properties.get('insights') as string,
+  totalDependencies :  properties.get('totalDependencies') as string,
+  dependenciesText : properties.get('dependenciesText') as string,
+  secondPage : properties.get('secondPage') as string,
+  thirdPage : properties.get('thirdPage') as string,
+  fourthPage : properties.get('fourthPage') as string,
+  nextPage : properties.get('nextPage') as string,
+  disableNext : properties.get('disableNext') as string
 };
 
 // Export the object containing all the page elements
