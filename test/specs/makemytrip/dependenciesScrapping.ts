@@ -97,6 +97,7 @@ describe("Git Automation", () => {
           await Controls.scrollTillTheElementVisible(pageElements.fourthPage)
           await browser.pause(2000)
           await Controls.click(pageElements.fourthPage)
+          await browser.pause(2000)
            let deptextsPage4 = await Controls.getTexts(pageElements.dependenciesText);
           elementCountinThisPage =  await Controls.getElementCount(pageElements.dependenciesText)
           console.log("elementCountinThisPage4thPage"+elementCountinThisPage)
