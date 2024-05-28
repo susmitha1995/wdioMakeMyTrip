@@ -28,6 +28,12 @@
     },
     "include": [
         "test",
-        "wdio.conf.ts"
-, "@types/webdriverio.d.ts"    ]
+        "wdio.conf.ts",
+        "@types/webdriverio.d.ts",
+        "test/**/*.ts",
+        "features/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
 }

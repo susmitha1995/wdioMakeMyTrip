@@ -1,8 +1,0 @@
-.........Console Logs.........
-
-totalNotext: 62 Total
-Extracted Number: 62
-elementCountinThisPage1stPage20
-elementCountinThisPage2ndPage20
-elementCountinThisPage3rdPage20
-elementCountinThisPage4thPage20

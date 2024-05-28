@@ -1,4 +1,0 @@
-.........Console Logs.........
-
-totalNotext: 62 Total
-Extracted Number: 62

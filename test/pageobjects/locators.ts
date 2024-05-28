@@ -35,7 +35,28 @@ const pageElements = {
   thirdPage : properties.get('thirdPage') as string,
   fourthPage : properties.get('fourthPage') as string,
   nextPage : properties.get('nextPage') as string,
-  disableNext : properties.get('disableNext') as string
+  disableNext : properties.get('disableNext') as string,
+  liabilityCoverage : properties.get('liabilityCoverage') as string,
+  compCoverage : properties.get('compCoverage') as string,
+  renewalTwoWheelerRdo : properties.get('renewalTwoWheelerRdo') as string,
+  proceedBtn: properties.get('proceedBtn') as string,
+  officeCodeDrpDown : properties.get('officeCodeDrpDown') as string,
+  continueBtn : properties.get('continueBtn') as string,
+  modelDrpDown : properties.get('modelDrpDown') as string,
+  bodyColor: properties.get('bodyColor') as string,
+  continueBtnForTwoWheeler:properties.get('continueBtnForTwoWheeler') as string,
+  registrationDateForTwoWheeler: properties.get('registrationDateForTwoWheeler') as string,
+  registrationDate: properties.get('registrationDate') as string,
+  cityOfRegistration : properties.get('cityOfRegistration') as string,
+  policyExpDateForTwoWheeler : properties.get('policyExpDateForTwoWheeler') as string,
+  futureDate: properties.get('futureDate') as string,
+  loadingImg :properties.get('loadingImg') as string,
+  nextMonth:properties.get('nextMonth') as string,
+  proceedBtnForTwoWheeler:properties.get('proceedBtnForTwoWheeler') as string,
+  saveBtn:properties.get('saveBtn') as string,
+  okBtn: properties.get('okBtn') as string,
+  tWThirdPartyPremium: properties.get('tWThirdPartyPremium') as string,
+  ncbLabel : properties.get('ncbLabel') as string
 };
 
 // Export the object containing all the page elements

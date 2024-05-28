@@ -5,6 +5,14 @@ import Library from '../pageobjects/library.js'
     static async setValueToTextBox(loc : string, txtToEnter : string){
         await $(loc).setValue(txtToEnter)
    }
+
+   static async waitTillElementNotVisible(loc : string){
+    const elementSize = await $$(loc).then(elements => elements.length);
+    if (elementSize>0) {
+        Controls.isExisting(loc,60000, 3000)
+    }        
+   }
+   
    static async  click(loc : string){
     const elementSize = await $$(loc).then(elements => elements.length);
     if (elementSize>0) {
@@ -62,6 +70,19 @@ static async getText(loc:string){
     return $(loc).getText();
 }
 
+
+
+// Method to select a dropdown option by visible text
+static async dropdownSelectByText(selector: string, text: string) {
+  
+    const element = await $(selector);
+    await element.selectByVisibleText(text);
+    
 }
+
+}
+
+
+
 
 export default Controls;

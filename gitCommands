@@ -1,0 +1,9 @@
+git init
+git pull master 
+git push -u origin master
+git commit -m "file changes"
+git add .
+npx wdio run ./wdio.conf.ts --spec ./test/specs/makemytrip/dependenciesScrapping.ts
+ Remove-Item -Force .git\index.lock
+ npm install chromedriver --save-dev
+npm init wdio@latest

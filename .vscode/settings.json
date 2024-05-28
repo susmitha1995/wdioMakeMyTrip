@@ -1,0 +1,28 @@
+{
+    "cucumberautocomplete.steps": [
+        "features/step-definitions/**/*.ts"
+    ],
+    "cucumberautocomplete.syncfeatures": "features/**/*.feature",
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "cucumberautocomplete.smartSnippets": true,
+    "cucumberautocomplete.stepsInvariants": true,
+    "cucumberautocomplete.skipDocStringsFormat": true,
+    "cucumberautocomplete.formatConfOverride": {
+        "And": 1,
+        "But": 1,
+        "Given": 1,
+        "When": 1,
+        "Then": 1
+    },
+    "cucumberautocomplete.cuke_step_definition_file_path": "features/step-definitions/steps.ts",
+    "editor.quickSuggestions": {
+        "comments": false,
+        "strings": true,
+        "other": true
+    },
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggest.filterGraceful": false,
+    "editor.suggest.showStatusBar": true,
+    "editor.inlineSuggest.enabled": true,
+    "typescript.tsdk": "node_modules/typescript/lib"
+}

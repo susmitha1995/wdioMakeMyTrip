@@ -13,6 +13,9 @@ class Base {
             case "github":
                 await browser.url(process.env.github+pathVar)
                 break;
+            case "ADP Two Wheeler":
+                await browser.url(process.env.adpTwoWheeler+"");
+                break;
         }
     }
 }

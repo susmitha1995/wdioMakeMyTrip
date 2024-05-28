@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../wdioDemo"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../WebDriverIODemo"
+		}
+	],
+	"settings": {}
+}
